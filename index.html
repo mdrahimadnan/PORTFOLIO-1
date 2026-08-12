@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Md. Rahim Adnan | Portfolio</title>
+<title>Md. Rahim Adnan | AI & Data Science Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -529,6 +529,29 @@ footer{
 .hero-bio{animation-delay:.5s}
 .hero-cta{animation-delay:.6s}
 .hero-right{animation:fadeUp .8s ease .3s both}
+
+/* Updated portfolio improvements */
+@media (max-width: 768px){
+  nav{padding:1rem 1.2rem}
+  .nav-links{gap:0.8rem;flex-wrap:wrap;justify-content:flex-end}
+  .nav-links a{font-size:0.48rem;letter-spacing:1.5px}
+  .hero-left{padding:4rem 1.5rem 2rem}
+  .hero-right{padding:2rem 1.5rem 5rem}
+  .hero-stats{left:1.5rem;bottom:1.2rem;gap:1.3rem}
+  section,.about-section,.skills-section,.exp-section,.proj-section,.contact-section{padding:4rem 1.2rem}
+  .about-grid,.proj-grid{grid-template-columns:1fr;gap:2rem}
+  .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .exp-item{grid-template-columns:70px 1fr;gap:1rem}
+  .exp-item::before{left:70px}
+  footer{padding:1.5rem 1.2rem;gap:1rem;flex-direction:column;text-align:center}
+}
+
+/* Currently-building cards */
+#building .proj-grid{margin-top:0}
+#building .proj-card .proj-title{margin-top:.2rem}
+@media (max-width:768px){
+  #building .proj-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
@@ -539,22 +562,22 @@ footer{
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Work</a>
-    <a href="#contact">Contact</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Journey</a><a href="#building">Building</a><a href="#contact">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Full Stack Developer &amp; Designer</div>
+    <div class="hero-eyebrow">AI &amp; Data Science Developer</div>
     <div class="hero-name">
       Md. Rahim<br><em>Adnan</em>
     </div>
-    <div class="hero-title-tag">Freelancer · AI & DS Student · Logo Designer. Future Bussiness Man </div>
+    <div class="hero-title-tag">B.Tech AI &amp; DS · Full Stack Developer · App Builder · AI Learner · Aspiring Founder</div>
     <div class="divider-line"></div>
     <p class="hero-bio">
-      Assalamu Alaikum. A craftsman of the digital world — building websites, designing brands, and engineering intelligent systems. Every creation rooted in faith, purpose, and excellence.
+      Assalamu Alaikum. I am an AI &amp; Data Science student building real software products — from full-stack systems and analytics tools to intelligent planning applications and my own app. I combine engineering, AI, design, leadership, and an entrepreneurial mindset.
     </p>
     <div class="hero-cta">
       <a class="btn-primary" href="#projects">View My Work</a>
@@ -572,12 +595,10 @@ footer{
 
   <div class="hero-stats">
     <div class="stat">
-      <span class="stat-n">5+</span>
-      <span class="stat-l">Projects</span>
+      <span class="stat-n">6+</span><span class="stat-l">Featured Projects</span>
     </div>
     <div class="stat">
-      <span class="stat-n">8+</span>
-      <span class="stat-l">Skills</span>
+      <span class="stat-n">10+</span><span class="stat-l">Tech Skills</span>
     </div>
     <div class="stat">
       <span class="stat-n">∞</span>
@@ -598,27 +619,15 @@ footer{
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>Assalamu Alaikum. My name is <strong>Md. Rahim Adnan</strong> — a B.Tech student specialising in Artificial Intelligence & Data Science at KL University, Hyderabad.</p>
-        <p>I am a <strong>Full Stack Developer</strong>, freelance <strong>Logo Designer</strong>, and a creative soul who finds meaning in building things that matter. Every project I undertake is an act of service — to my clients, to my craft, and to Allah.</p>
-        <p>Thinking like a businessman. Building like an engineer. Creating products that look premium, perform flawlessly, and scale with intention.</p>
+        <p>Assalamu Alaikum. I’m <strong>Md. Rahim Adnan</strong>, a B.Tech student in <strong>Artificial Intelligence &amp; Data Science at KL University</strong>. I build practical projects across software development, DSA, AI, analytics, embedded systems, and product development.</p>
+        <p>My strongest work includes a <strong>Drone Delivery Analysis Planner</strong> built for CFAI, an <strong>Inventory Management platform for shops and online businesses</strong> with a backend system, and several full-stack and data-focused applications.</p>
+        <p>I’m currently developing <strong>my own app</strong> and learning <strong>Agentic AI through DeepLearning.AI</strong>. I’ve also explored <strong>Prompt Engineering through DeepLearning.AI</strong> and continue improving both my technical and soft skills, including leadership and teamwork.</p>
       </div>
       <div class="about-stats-grid">
-        <div class="astat">
-          <span class="astat-n">KLU</span>
-          <span class="astat-l">University</span>
-        </div>
-        <div class="astat">
-          <span class="astat-n">AI</span>
-          <span class="astat-l">B.Tech Stream</span>
-        </div>
-        <div class="astat">
-          <span class="astat-n">5+</span>
-          <span class="astat-l">Projects Done</span>
-        </div>
-        <div class="astat">
-          <span class="astat-n">∞</span>
-          <span class="astat-l">Faith & Drive</span>
-        </div>
+        <div class="astat"><span class="astat-n">KLU</span><span class="astat-l">B.Tech · AI &amp; DS</span></div>
+        <div class="astat"><span class="astat-n">CFAI</span><span class="astat-l">Drone Delivery Planner</span></div>
+        <div class="astat"><span class="astat-n">Full Stack</span><span class="astat-l">Apps · APIs · Databases</span></div>
+        <div class="astat"><span class="astat-n">AI</span><span class="astat-l">Agentic AI · Prompting</span></div>
       </div>
     </div>
   </div>
@@ -635,25 +644,25 @@ footer{
       </div>
     </div>
    <div class="skills-grid">
-  <div class="skill-card"><span class="sk-icon">💼</span><div class="sk-name">Business Strategy</div></div>
-  <div class="skill-card"><span class="sk-icon">🚀</span><div class="sk-name">Product Building</div></div>
-  <div class="skill-card"><span class="sk-icon">📈</span><div class="sk-name">Growth Marketing</div></div>
-  <div class="skill-card"><span class="sk-icon">🤝</span><div class="sk-name">Leadership</div></div>
-  <div class="skill-card"><span class="sk-icon">🐍</span><div class="sk-name">Python</div></div>
   <div class="skill-card"><span class="sk-icon">☕</span><div class="sk-name">Java</div></div>
+  <div class="skill-card"><span class="sk-icon">🐍</span><div class="sk-name">Python</div></div>
+  <div class="skill-card"><span class="sk-icon">⚛️</span><div class="sk-name">React</div></div>
+  <div class="skill-card"><span class="sk-icon">JS</span><div class="sk-name">JavaScript</div></div>
   <div class="skill-card"><span class="sk-icon">🧠</span><div class="sk-name">DSA</div></div>
-  <div class="skill-card"><span class="sk-icon">🌐</span><div class="sk-name">Full Stack</div></div>
-  <div class="skill-card"><span class="sk-icon">🤖</span><div class="sk-name">AI & ML</div></div>
+  <div class="skill-card"><span class="sk-icon">🍃</span><div class="sk-name">Spring Boot</div></div>
+  <div class="skill-card"><span class="sk-icon">⚡</span><div class="sk-name">FastAPI</div></div>
+  <div class="skill-card"><span class="sk-icon">🐘</span><div class="sk-name">PostgreSQL</div></div>
+  <div class="skill-card"><span class="sk-icon">🤖</span><div class="sk-name">AI / ML</div></div>
+  <div class="skill-card"><span class="sk-icon">🔗</span><div class="sk-name">Agentic AI</div></div>
+  <div class="skill-card"><span class="sk-icon">💬</span><div class="sk-name">Prompt Engineering</div></div>
   <div class="skill-card"><span class="sk-icon">📊</span><div class="sk-name">Data Analytics</div></div>
-  <div class="skill-card"><span class="sk-icon">🎨</span><div class="sk-name">Brand Identity</div></div>
-  <div class="skill-card"><span class="sk-icon">🎬</span><div class="sk-name">Content Creation</div></div>
-  <div class="skill-card"><span class="sk-icon">📦</span><div class="sk-name">Product Design</div></div>
-  <div class="skill-card"><span class="sk-icon">🧩</span><div class="sk-name">Problem Solving</div></div>
-  <div class="skill-card"><span class="sk-icon">💡</span><div class="sk-name">Innovation</div></div>
-  <div class="skill-card"><span class="sk-icon">🎯</span><div class="sk-name">Strategic Thinking</div></div>
+  <div class="skill-card"><span class="sk-icon">📱</span><div class="sk-name">App Development</div></div>
+  <div class="skill-card"><span class="sk-icon">🎨</span><div class="sk-name">UI &amp; Branding</div></div>
+  <div class="skill-card"><span class="sk-icon">★</span><div class="sk-name">Leadership</div></div>
+  <div class="skill-card"><span class="sk-icon">🤝</span><div class="sk-name">Teamwork</div></div>
 </div>
-  </div>
-</div>
+   </div>
+ </div>
 
 <!-- EXPERIENCE -->
 <div class="exp-section" id="experience">
@@ -669,38 +678,38 @@ footer{
       <div class="exp-item">
         <div class="exp-year">2025 —<br>Present</div>
         <div class="exp-content">
-          <div class="exp-role">B.Tech — AI & Data Science</div>
-          <div class="exp-org">KL University, Vijayawada</div>
-          <div class="exp-desc">Pursuing a degree in Artificial Intelligence & Data Science, building a strong foundation in machine learning, algorithms, and intelligent systems.</div>
+          <div class="exp-role">B.Tech — Artificial Intelligence &amp; Data Science</div>
+          <div class="exp-org">KL University</div>
+          <div class="exp-desc">Building foundations and practical skills across DSA, AI/ML, statistics, full-stack development, and project-based learning.</div>
         </div>
       </div>
       <div class="exp-item">
-        <div class="exp-year">2025 —<br>Present</div>
+        <div class="exp-year">2026 —<br>Present</div>
         <div class="exp-content">
-          <div class="exp-role">Full Stack Developer</div>
-          <div class="exp-org">Freelance</div>
-          <div class="exp-desc">Designing and developing full-stack web applications for clients globally — from concept to deployment, with clean code and sharp design.</div>
+          <div class="exp-role">Product &amp; App Development</div>
+          <div class="exp-org">Independent Project</div>
+          <div class="exp-desc">Currently developing my own application and learning how to take an idea from product concept through frontend, backend, database, and deployment.</div>
         </div>
       </div>
       <div class="exp-item">
-        <div class="exp-year">2025 —<br>Present</div>
+        <div class="exp-year">2026 —<br>Present</div>
         <div class="exp-content">
-          <div class="exp-role">Logo & Brand Designer</div>
-          <div class="exp-org">Freelance</div>
-          <div class="exp-desc">Crafting brand identities and logo systems for businesses across industries. 10+ clients served with distinction and creative excellence.</div>
+          <div class="exp-role">Agentic AI &amp; Prompt Engineering</div>
+          <div class="exp-org">DeepLearning.AI · Ongoing Learning</div>
+          <div class="exp-desc">Currently learning Agentic AI and exploring prompt engineering through DeepLearning.AI, with a focus on building useful AI-powered workflows and applications.</div>
         </div>
       </div>
       <div class="exp-item">
-        <div class="exp-year">2025 —<br>Present</div>
+        <div class="exp-year">2026 —<br>Present</div>
         <div class="exp-content">
-          <div class="exp-role">3D Artist & Video Editor</div>
-          <div class="exp-org">Blender · Personal & Client Work</div>
-          <div class="exp-desc">3D modeling, rendering, and motion work using Blender. Video editing for personal projects and client deliverables.</div>
+          <div class="exp-role">Leadership &amp; Team Skills</div>
+          <div class="exp-org">Academic &amp; Project Work</div>
+          <div class="exp-desc">Developing leadership, communication, teamwork, problem-solving, and project coordination skills alongside technical development.</div>
         </div>
       </div>
     </div>
-  </div>
-</div>
+   </div>
+ </div>
 
 <!-- PROJECTS -->
 <div class="proj-section" id="projects">
@@ -709,38 +718,95 @@ footer{
       <div class="section-num">04</div>
       <div class="section-info">
         <div class="section-eyebrow">Selected Work</div>
-        <div class="section-title" style="color:var(--cream)">Projects of<br><em style="font-style:italic;color:var(--gold2)">distinction.</em></div>
+        <div class="section-title" style="color:var(--cream)">Projects I<br><em style="font-style:italic;color:var(--gold2)">have built.</em></div>
       </div>
     </div>
     <div class="proj-grid">
-      <div class="proj-card">
+      <div class="proj-card" style="grid-column:1/-1;">
         <div class="proj-num">01</div>
-        <span class="proj-tag">Full Stack</span>
-        <div class="proj-title">SmartHire — Job Portal</div>
-        <p class="proj-desc">An AI-powered job portal connecting freelancers with clients. Real-time chat, intelligent recommendations, and full authentication system built with modern technologies.</p>
-        <div class="proj-pills">
-          <span class="proj-pill">React</span>
-          <span class="proj-pill">Node.js</span>
-          <span class="proj-pill">Python</span>
-          <span class="proj-pill">MongoDB</span>
-          <span class="proj-pill">AI/ML</span>
-        </div>
+        <span class="proj-tag">CFAI · AI / Planning · Best Project</span>
+        <div class="proj-title">Drone Delivery Analysis Planner</div>
+        <p class="proj-desc">My strongest academic project: a drone delivery analysis and planning system built for CFAI. It focuses on planning delivery routes and analysing constraints to support smarter drone-based delivery decisions.</p>
+        <div class="proj-pills"><span class="proj-pill">Python</span><span class="proj-pill">A* Search</span><span class="proj-pill">Algorithms</span><span class="proj-pill">Planning</span><span class="proj-pill">CFAI</span></div>
       </div>
+
       <div class="proj-card">
         <div class="proj-num">02</div>
-        <span class="proj-tag">Design & Dev</span>
-        <div class="proj-title">BrandCraft — Logo Studio</div>
-        <p class="proj-desc">A personal freelance branding toolkit showcasing 15+ logo designs for clients across industries. Includes a web app for client brief submission and design previews.</p>
-        <div class="proj-pills">
-          <span class="proj-pill">HTML/CSS</span>
-          <span class="proj-pill">JavaScript</span>
-          <span class="proj-pill">Blender</span>
-          <span class="proj-pill">Figma</span>
-        </div>
+        <span class="proj-tag">Full Stack · Business</span>
+        <div class="proj-title">Inventory Management Platform</div>
+        <p class="proj-desc">A backend-backed inventory system designed for shops and online businesses to manage inventory and business data through a practical software platform.</p>
+        <div class="proj-pills"><span class="proj-pill">Backend</span><span class="proj-pill">PostgreSQL</span><span class="proj-pill">APIs</span><span class="proj-pill">Business</span></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">03</div>
+        <span class="proj-tag">Product · Ongoing</span>
+        <div class="proj-title">My Own App</div>
+        <p class="proj-desc">An independent application currently under development, taking my learning from college projects into a product I am building myself.</p>
+        <div class="proj-pills"><span class="proj-pill">App Development</span><span class="proj-pill">Product</span><span class="proj-pill">AI</span></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">04</div>
+        <span class="proj-tag">DSA · Java</span>
+        <div class="proj-title">SportsAnalytics</div>
+        <p class="proj-desc">An athlete performance and tournament management system built around DSA concepts as a practical Java project.</p>
+        <div class="proj-pills"><span class="proj-pill">Java</span><span class="proj-pill">DSA</span><span class="proj-pill">Algorithms</span></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">05</div>
+        <span class="proj-tag">Data · AI</span>
+        <div class="proj-title">EDA Analytics Dashboard</div>
+        <p class="proj-desc">A web dashboard for exploring datasets and presenting exploratory data analysis through a clean interface.</p>
+        <div class="proj-pills"><span class="proj-pill">Python</span><span class="proj-pill">Pandas</span><span class="proj-pill">Matplotlib</span><span class="proj-pill">Flask</span></div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-num">06</div>
+        <span class="proj-tag">Embedded</span>
+        <div class="proj-title">STM32 Control Experiments</div>
+        <p class="proj-desc">Hands-on microcontroller work involving GPIO, LEDs, pull-up/pull-down inputs, I2C LCD concepts, and relay control.</p>
+        <div class="proj-pills"><span class="proj-pill">STM32</span><span class="proj-pill">C</span><span class="proj-pill">GPIO</span><span class="proj-pill">I2C</span></div>
       </div>
     </div>
+   </div>
+ </div>
+
+
+<!-- CURRENTLY BUILDING -->
+<section id="building" class="exp-section" style="background:var(--cream2);">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div class="section-info">
+      <div class="section-eyebrow">CURRENTLY BUILDING</div>
+      <div class="section-title">What I am<br><em style="font-style:italic;color:var(--gold)">working on now.</em></div>
+    </div>
   </div>
-</div>
+
+  <div class="proj-grid" style="max-width:1000px;">
+    <div class="proj-card" style="background:var(--navy);">
+      <span class="proj-tag">IN DEVELOPMENT</span>
+      <div class="proj-title">My Own App</div>
+      <p class="proj-desc">Currently developing my own application and turning an idea into a real product, from development and backend systems to the overall user experience.</p>
+      <div class="proj-pills"><span class="proj-pill">App Development</span><span class="proj-pill">Product</span><span class="proj-pill">Full Stack</span></div>
+    </div>
+
+    <div class="proj-card" style="background:var(--navy);">
+      <span class="proj-tag">LEARNING · BUILDING</span>
+      <div class="proj-title">Agentic AI Project</div>
+      <p class="proj-desc">Currently learning Agentic AI through DeepLearning.AI and applying that knowledge while working on an agentic AI project.</p>
+      <div class="proj-pills"><span class="proj-pill">Agentic AI</span><span class="proj-pill">Prompt Engineering</span><span class="proj-pill">AI</span></div>
+    </div>
+
+    <div class="proj-card" style="background:var(--navy);">
+      <span class="proj-tag">IoT · CURRENT</span>
+      <div class="proj-title">Universal Motor Health Indicator</div>
+      <p class="proj-desc">A current IoT-focused project exploring a universal motor health indicator for monitoring motor condition and turning useful sensor information into a practical health indication.</p>
+      <div class="proj-pills"><span class="proj-pill">IoT</span><span class="proj-pill">Sensors</span><span class="proj-pill">Motor Health</span><span class="proj-pill">Embedded</span></div>
+    </div>
+  </div>
+</section>
 
 <!-- CONTACT -->
 <div class="contact-section" id="contact">
@@ -748,7 +814,18 @@ footer{
     <div class="section-eyebrow" style="justify-content:center;margin-bottom:1rem">Contact</div>
     <div class="contact-quote">"Let us build something extraordinary together."</div>
     <div class="contact-sub">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
-    <div class="contact-links">
+    
+<div style="margin:0 auto 3rem;max-width:620px;padding:2rem;border:1px solid var(--cream3);background:var(--cream);">
+  <div class="section-eyebrow" style="justify-content:center;">LONG-TERM GOAL</div>
+  <div class="contact-quote" style="font-size:1.35rem;margin-top:0.8rem;">
+    “Build something meaningful, then settle into a peaceful life on a big farm — with sheep, animals, and a small house.”
+  </div>
+  <p class="contact-sub" style="margin-bottom:0;margin-top:1rem;">
+    A long-term vision of building a successful life and business while keeping life simple, grounded, and close to nature.
+  </p>
+</div>
+
+<div class="contact-links">
       <a class="clink" href="mailto:mdrahimadnan211@gmail.com">
         <span class="clink-icon">✉</span> mdrahimadnan211@gmail.com
       </a>
@@ -765,7 +842,7 @@ footer{
 <!-- FOOTER -->
 <footer>
   <div class="foot-l">Md. Rahim Adnan</div>
-  <div class="foot-r">© 2025 · Built with faith & code · All rights reserved</div>
+  <div class="foot-r">© 2026 · Built with faith & code · All rights reserved</div>
 </footer>
 
 </body>
