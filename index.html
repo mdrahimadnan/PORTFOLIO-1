@@ -82,7 +82,7 @@ nav{
 }
 .logo{
   font-family:'Playfair Display',serif;
-  font-size:1.1rem;font-weight:900;
+  font-size:0.95rem;font-weight:900;
   color:var(--gold2);letter-spacing:4px;
   text-transform:uppercase;
 }
@@ -552,32 +552,43 @@ footer{
 @media (max-width:768px){
   #building .proj-grid{grid-template-columns:1fr}
 }
+
+/* ======= PORTFOLIO CONTENT REFINEMENTS ======= */
+.proj-card .btn-ghost{font-size:.55rem;}
+.proj-card .btn-ghost::after{content:' ↗';}
+@media (max-width:768px){
+  .hero{min-height:auto;}
+  .photo-frame{width:260px;height:330px;}
+  .hero-title-tag{font-size:1rem;}
+  .hero-bio{font-size:1rem;}
+  .section-num{font-size:4rem;}
+}
 </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="logo">MRA <span>& Associates</span></div>
+  <div class="logo">MD. RAHIM <span>ADNAN</span></div>
   <div class="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#experience">Journey</a><a href="#building">Building</a><a href="#contact">Contact</a>
+    <a href="#experience">Journey</a><a href="#building">Now</a><a href="#contact">Contact</a>
   </div>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">AI &amp; Data Science Developer</div>
+    <div class="hero-eyebrow">AI &amp; Data Science · Full Stack</div>
     <div class="hero-name">
       Md. Rahim<br><em>Adnan</em>
     </div>
-    <div class="hero-title-tag">B.Tech AI &amp; DS · Full Stack Developer · App Builder · AI Learner · Aspiring Founder</div>
+    <div class="hero-title-tag">B.Tech AI &amp; DS · Full Stack Developer · Freelancer · Product Builder</div>
     <div class="divider-line"></div>
     <p class="hero-bio">
-      Assalamu Alaikum. I am an AI &amp; Data Science student building real software products — from full-stack systems and analytics tools to intelligent planning applications and my own app. I combine engineering, AI, design, leadership, and an entrepreneurial mindset.
+      Assalamu Alaikum. I’m a freelance developer and B.Tech AI &amp; Data Science student who enjoys turning ideas into useful digital products. I work across full-stack development, AI/ML, data, UI, and embedded systems — building for clients, projects, and ideas of my own.
     </p>
     <div class="hero-cta">
       <a class="btn-primary" href="#projects">View My Work</a>
@@ -595,7 +606,7 @@ footer{
 
   <div class="hero-stats">
     <div class="stat">
-      <span class="stat-n">6+</span><span class="stat-l">Featured Projects</span>
+      <span class="stat-n">5+</span><span class="stat-l">Featured Projects</span>
     </div>
     <div class="stat">
       <span class="stat-n">10+</span><span class="stat-l">Tech Skills</span>
@@ -614,14 +625,14 @@ footer{
       <div class="section-num">01</div>
       <div class="section-info">
         <div class="section-eyebrow">About Me</div>
-        <div class="section-title" style="color:var(--cream)">A man of craft<br><em style="font-style:italic;color:var(--gold2)">& conviction.</em></div>
+        <div class="section-title" style="color:var(--cream)">Building with<br><em style="font-style:italic;color:var(--gold2)">purpose.</em></div>
       </div>
     </div>
     <div class="about-grid">
       <div class="about-text">
-        <p>Assalamu Alaikum. I’m <strong>Md. Rahim Adnan</strong>, a B.Tech student in <strong>Artificial Intelligence &amp; Data Science at KL University</strong>. I build practical projects across software development, DSA, AI, analytics, embedded systems, and product development.</p>
-        <p>My strongest work includes a <strong>Drone Delivery Analysis Planner</strong> built for CFAI, an <strong>Inventory Management platform for shops and online businesses</strong> with a backend system, and several full-stack and data-focused applications.</p>
-        <p>I’m currently developing <strong>my own app</strong> and learning <strong>Agentic AI through DeepLearning.AI</strong>. I’ve also explored <strong>Prompt Engineering through DeepLearning.AI</strong> and continue improving both my technical and soft skills, including leadership and teamwork.</p>
+        <p>Assalamu Alaikum. I’m <strong>Md. Rahim Adnan</strong>, a B.Tech student in <strong>Artificial Intelligence &amp; Data Science at KL University</strong>. I build practical projects across full-stack development, DSA, AI/ML, data analytics, embedded systems, and product development.</p>
+        <p>My work includes <strong>THERMOSHELTER</strong> for <strong>SIH 2026</strong>, a <strong>Drone Delivery Analysis Planner</strong> built for CFAI, an <strong>Inventory Management platform</strong>, and projects across Java, Python, AI, analytics, and embedded systems.</p>
+        <p>I’m also developing independent products and expanding my skills in <strong>Agentic AI, prompt engineering, APIs, databases, and intelligent application design</strong>.</p>
       </div>
       <div class="about-stats-grid">
         <div class="astat"><span class="astat-n">KLU</span><span class="astat-l">B.Tech · AI &amp; DS</span></div>
@@ -639,8 +650,8 @@ footer{
     <div class="section-header">
       <div class="section-num">02</div>
       <div class="section-info">
-        <div class="section-eyebrow">Skills & Tools</div>
-        <div class="section-title">The arsenal<br><em style="font-style:italic;color:var(--gold)">of a craftsman.</em></div>
+        <div class="section-eyebrow">Skills &amp; Tools</div>
+        <div class="section-title">Technical<br><em style="font-style:italic;color:var(--gold)">toolkit.</em></div>
       </div>
     </div>
    <div class="skills-grid">
@@ -670,8 +681,8 @@ footer{
     <div class="section-header">
       <div class="section-num">03</div>
       <div class="section-info">
-        <div class="section-eyebrow">Experience</div>
-        <div class="section-title">A record of<br><em style="font-style:italic;color:var(--gold)">achievement.</em></div>
+        <div class="section-eyebrow">Education &amp; Journey</div>
+        <div class="section-title">Learning, building,<br><em style="font-style:italic;color:var(--gold)">growing.</em></div>
       </div>
     </div>
     <div class="exp-list">
@@ -718,55 +729,53 @@ footer{
       <div class="section-num">04</div>
       <div class="section-info">
         <div class="section-eyebrow">Selected Work</div>
-        <div class="section-title" style="color:var(--cream)">Projects I<br><em style="font-style:italic;color:var(--gold2)">have built.</em></div>
+        <div class="section-title" style="color:var(--cream)">Things I<br><em style="font-style:italic;color:var(--gold2)">have built.</em></div>
       </div>
     </div>
     <div class="proj-grid">
       <div class="proj-card" style="grid-column:1/-1;">
         <div class="proj-num">01</div>
-        <span class="proj-tag">CFAI · AI / Planning · Best Project</span>
-        <div class="proj-title">Drone Delivery Analysis Planner</div>
-        <p class="proj-desc">My strongest academic project: a drone delivery analysis and planning system built for CFAI. It focuses on planning delivery routes and analysing constraints to support smarter drone-based delivery decisions.</p>
-        <div class="proj-pills"><span class="proj-pill">Python</span><span class="proj-pill">A* Search</span><span class="proj-pill">Algorithms</span><span class="proj-pill">Planning</span><span class="proj-pill">CFAI</span></div>
+        <span class="proj-tag">SIH 2026 · AI · ENGINEERING</span>
+        <div class="proj-title">THERMOSHELTER</div>
+        <p class="proj-desc">A real-data 3D shelter simulation and optimization platform combining climate intelligence, terrain modeling, IoT soil telemetry, thermal simulation, and multi-objective optimization to support climate-aware shelter design.</p>
+        <div class="proj-pills">
+          <span class="proj-pill">Python</span><span class="proj-pill">FastAPI</span><span class="proj-pill">Three.js</span><span class="proj-pill">IoT</span><span class="proj-pill">Optimization</span>
+        </div>
+        <div style="margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;">
+          <span class="proj-pill" style="padding:5px 12px;border-color:var(--gold2);color:var(--gold2);">SIH 2026 · SIH26051</span>
+          <a class="btn-ghost" href="https://github.com/mdrahimadnan/ThermoShelter" target="_blank" rel="noopener">View Project</a>
+        </div>
       </div>
 
       <div class="proj-card">
         <div class="proj-num">02</div>
-        <span class="proj-tag">Full Stack · Business</span>
-        <div class="proj-title">Inventory Management Platform</div>
-        <p class="proj-desc">A backend-backed inventory system designed for shops and online businesses to manage inventory and business data through a practical software platform.</p>
-        <div class="proj-pills"><span class="proj-pill">Backend</span><span class="proj-pill">PostgreSQL</span><span class="proj-pill">APIs</span><span class="proj-pill">Business</span></div>
+        <span class="proj-tag">CFAI · AI / PLANNING</span>
+        <div class="proj-title">Drone Delivery Analysis Planner</div>
+        <p class="proj-desc">A drone delivery planning system focused on route analysis, constraints, and algorithmic decision-making for smarter drone-based delivery scenarios.</p>
+        <div class="proj-pills"><span class="proj-pill">Python</span><span class="proj-pill">A* Search</span><span class="proj-pill">Algorithms</span><span class="proj-pill">Planning</span></div>
       </div>
 
       <div class="proj-card">
         <div class="proj-num">03</div>
-        <span class="proj-tag">Product · Ongoing</span>
-        <div class="proj-title">My Own App</div>
-        <p class="proj-desc">An independent application currently under development, taking my learning from college projects into a product I am building myself.</p>
-        <div class="proj-pills"><span class="proj-pill">App Development</span><span class="proj-pill">Product</span><span class="proj-pill">AI</span></div>
+        <span class="proj-tag">FULL STACK · BUSINESS</span>
+        <div class="proj-title">Inventory Management Platform</div>
+        <p class="proj-desc">A backend-backed inventory platform designed for shops and online businesses to manage products, inventory data, and business workflows through a practical software system.</p>
+        <div class="proj-pills"><span class="proj-pill">Backend</span><span class="proj-pill">PostgreSQL</span><span class="proj-pill">APIs</span><span class="proj-pill">Business</span></div>
       </div>
 
       <div class="proj-card">
         <div class="proj-num">04</div>
-        <span class="proj-tag">DSA · Java</span>
+        <span class="proj-tag">DSA · JAVA</span>
         <div class="proj-title">SportsAnalytics</div>
-        <p class="proj-desc">An athlete performance and tournament management system built around DSA concepts as a practical Java project.</p>
+        <p class="proj-desc">An athlete performance and tournament management system built as a practical Java project using data structures and algorithmic problem-solving.</p>
         <div class="proj-pills"><span class="proj-pill">Java</span><span class="proj-pill">DSA</span><span class="proj-pill">Algorithms</span></div>
       </div>
 
       <div class="proj-card">
         <div class="proj-num">05</div>
-        <span class="proj-tag">Data · AI</span>
-        <div class="proj-title">EDA Analytics Dashboard</div>
-        <p class="proj-desc">A web dashboard for exploring datasets and presenting exploratory data analysis through a clean interface.</p>
-        <div class="proj-pills"><span class="proj-pill">Python</span><span class="proj-pill">Pandas</span><span class="proj-pill">Matplotlib</span><span class="proj-pill">Flask</span></div>
-      </div>
-
-      <div class="proj-card">
-        <div class="proj-num">06</div>
-        <span class="proj-tag">Embedded</span>
+        <span class="proj-tag">EMBEDDED · STM32</span>
         <div class="proj-title">STM32 Control Experiments</div>
-        <p class="proj-desc">Hands-on microcontroller work involving GPIO, LEDs, pull-up/pull-down inputs, I2C LCD concepts, and relay control.</p>
+        <p class="proj-desc">Hands-on embedded development involving GPIO, LEDs, pull-up/pull-down inputs, I2C LCD concepts, relay control, and microcontroller interfacing.</p>
         <div class="proj-pills"><span class="proj-pill">STM32</span><span class="proj-pill">C</span><span class="proj-pill">GPIO</span><span class="proj-pill">I2C</span></div>
       </div>
     </div>
@@ -777,7 +786,7 @@ footer{
 <!-- CURRENTLY BUILDING -->
 <section id="building" class="exp-section" style="background:var(--cream2);">
   <div class="section-header">
-    <div class="section-num">06</div>
+    <div class="section-num">05</div>
     <div class="section-info">
       <div class="section-eyebrow">CURRENTLY BUILDING</div>
       <div class="section-title">What I am<br><em style="font-style:italic;color:var(--gold)">working on now.</em></div>
@@ -786,23 +795,30 @@ footer{
 
   <div class="proj-grid" style="max-width:1000px;">
     <div class="proj-card" style="background:var(--navy);">
-      <span class="proj-tag">IN DEVELOPMENT</span>
-      <div class="proj-title">My Own App</div>
-      <p class="proj-desc">Currently developing my own application and turning an idea into a real product, from development and backend systems to the overall user experience.</p>
-      <div class="proj-pills"><span class="proj-pill">App Development</span><span class="proj-pill">Product</span><span class="proj-pill">Full Stack</span></div>
+      <span class="proj-tag">EV · MONITORING · CURRENT</span>
+      <div class="proj-title">EV Battery Monitoring System</div>
+      <p class="proj-desc">A monitoring-focused project exploring practical ways to track EV battery performance and present useful battery-health information through a clear system.</p>
+      <div class="proj-pills"><span class="proj-pill">EV</span><span class="proj-pill">Battery Monitoring</span><span class="proj-pill">IoT</span><span class="proj-pill">Embedded</span></div>
     </div>
 
     <div class="proj-card" style="background:var(--navy);">
-      <span class="proj-tag">LEARNING · BUILDING</span>
+      <span class="proj-tag">IN DEVELOPMENT</span>
+      <div class="proj-title">Independent Product</div>
+      <p class="proj-desc">Building an independent application from product idea to implementation, working across frontend, backend, database, and user experience.</p>
+      <div class="proj-pills"><span class="proj-pill">Product</span><span class="proj-pill">Full Stack</span><span class="proj-pill">App Development</span></div>
+    </div>
+
+    <div class="proj-card" style="background:var(--navy);">
+      <span class="proj-tag">AI · LEARNING · BUILDING</span>
       <div class="proj-title">Agentic AI Project</div>
-      <p class="proj-desc">Currently learning Agentic AI through DeepLearning.AI and applying that knowledge while working on an agentic AI project.</p>
+      <p class="proj-desc">Learning Agentic AI through DeepLearning.AI and applying that knowledge while exploring agent-based workflows for practical software products.</p>
       <div class="proj-pills"><span class="proj-pill">Agentic AI</span><span class="proj-pill">Prompt Engineering</span><span class="proj-pill">AI</span></div>
     </div>
 
     <div class="proj-card" style="background:var(--navy);">
-      <span class="proj-tag">IoT · CURRENT</span>
+      <span class="proj-tag">IoT · EMBEDDED · CURRENT</span>
       <div class="proj-title">Universal Motor Health Indicator</div>
-      <p class="proj-desc">A current IoT-focused project exploring a universal motor health indicator for monitoring motor condition and turning useful sensor information into a practical health indication.</p>
+      <p class="proj-desc">An IoT-focused project exploring motor-condition monitoring and turning sensor information into a practical health indication.</p>
       <div class="proj-pills"><span class="proj-pill">IoT</span><span class="proj-pill">Sensors</span><span class="proj-pill">Motor Health</span><span class="proj-pill">Embedded</span></div>
     </div>
   </div>
@@ -812,19 +828,9 @@ footer{
 <div class="contact-section" id="contact">
   <div class="contact-inner">
     <div class="section-eyebrow" style="justify-content:center;margin-bottom:1rem">Contact</div>
-    <div class="contact-quote">"Let us build something extraordinary together."</div>
-    <div class="contact-sub">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</div>
+    <div class="contact-quote">"Let’s build something useful, intelligent, and meaningful."</div>
+    <div class="contact-sub">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم · Available for freelance development, software projects, AI/data work, and product collaborations.</div>
     
-<div style="margin:0 auto 3rem;max-width:620px;padding:2rem;border:1px solid var(--cream3);background:var(--cream);">
-  <div class="section-eyebrow" style="justify-content:center;">LONG-TERM GOAL</div>
-  <div class="contact-quote" style="font-size:1.35rem;margin-top:0.8rem;">
-    “Build something meaningful, then settle into a peaceful life on a big farm — with sheep, animals, and a small house.”
-  </div>
-  <p class="contact-sub" style="margin-bottom:0;margin-top:1rem;">
-    A long-term vision of building a successful life and business while keeping life simple, grounded, and close to nature.
-  </p>
-</div>
-
 <div class="contact-links">
       <a class="clink" href="mailto:mdrahimadnan211@gmail.com">
         <span class="clink-icon">✉</span> mdrahimadnan211@gmail.com
